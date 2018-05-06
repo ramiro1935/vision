@@ -1,0 +1,19 @@
+{
+  "name": "vision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "csv-file-creator": "^1.0.8",
+    "jsplumb": "^2.6.9",
+    "ocr-space-api": "^1.0.1",
+    "vue-axios": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

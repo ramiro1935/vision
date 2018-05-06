@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./assets/css/user.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<main>
+			<div class="colors text-center">
+				*(Alumno a distancia) Vision computacional - OCR
+			</div>
+			<div class="container">
+				<div class="jumbotron">
+					<h1>Vision Computacional - Crear mapas mentales!</h1>
+					<p>La creación de mapas mentales de textos escaneados
+					para mejorar la comprensión de los apuntes en colegios.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<form class="navbar-form" action="diagrama.html">
+							<div class="row text-center">
+								<div class="col-md-4 ">
+									<input   class="btn btn-success" type="submit" value="Crear mapa">
+								</div>
+								<div class="col-md-4">
+									<input class="text-center" type="file"  @change="cargarImagen()" value="Cargar imagen">
+								</div>
+								<input  class="btn btn-success" type="button" value="Cargar ideas" @click="generarCsv()">
+							</div>
+							<div class="progress">
+							  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" :style="{width: count + '%'}" aria-valuemin="0" aria-valuemax="100">
+							    <span class="sr-only"></span>
+							  </div>
+							</div>
+								<div class="row">
+									<div class="col-md-12">
+										<hr>
+										<pre>{{$data}}</pre>
+										<hr>
+									</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+			  <div class="col-xs-6 col-md-6">
+			    <a href="#" class="thumbnail">
+			      <img src="./assets/first.jpeg" alt="Imagen1">
+			    </a>
+			  </div>
+			  <div class="col-xs-6 col-md-6">
+			    <a href="#" class="thumbnail">
+			      <img src="./assets/first.jpeg" alt="Imagen1">
+			    </a>
+			  </div>
+			  <div class="col-xs-6 col-md-6">
+			    <a href="#" class="thumbnail">
+			      <img src="./assets/first.jpeg" alt="Imagen1">
+			    </a>
+			  </div>
+			  <div class="col-xs-6 col-md-6">
+			    <a href="#" class="thumbnail">
+			      <img src="./assets/first.jpeg" alt="Imagen1">
+			    </a>
+			  </div>
+			</div>
+		</div>
+		<div class="footer">
+				*Alumno: Arivilca Miranda Denis Ramiro Semestre: 9no
+				Alumno a distancia
+		</div>
+	</main>
+	</body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
+	<script src="./assets/js/main.js"></script>
+</html>
